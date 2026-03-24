@@ -39,5 +39,9 @@ function displayFiles() {
 }
 
 function restore(file, version) {
-    alert(`Restored ${file} Version ${version}`);
+    document.getElementById("status").innerText =
+        `Restored ${file} Version ${version}`;
+
+    document.getElementById("restoredBox").innerHTML =
+        `<b>Showing Version ${version} of ${file}</b>`;
 }
